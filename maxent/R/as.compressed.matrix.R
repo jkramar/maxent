@@ -9,11 +9,7 @@ as.compressed.matrix <- function(DocumentTermMatrix) {
     tryCatch(return(as.matrix.csr(as.matrix(DocumentTermMatrix))),error=function(e) stop("Data must be encapsulated using one of the following classes: DocumentTermMatrix or TermDocumentMatrix (package tm), Matrix (package Matrix), matrix.csr (SparseM), data.frame, or matrix"));
     }
     
-	ia <- c(1);
-	for (n in 1:dim(DocumentTermMatrix)[1]) {
-		el <- sum(DocumentTermMatrix$i == n)+ia[length(ia)];
-		ia <- append(ia,el);
-	}
+	ia <- cumsum(c(1, table(factor(DocumentTermMatrix$i, 1:dim(DocumentTermMatrix)[1]))));
 	
 	matrix <- new("matrix.csr",ra=as.numeric(DocumentTermMatrix$v),ja=DocumentTermMatrix$j,ia=as.integer(ia),dimension=dim(DocumentTermMatrix));
 	
