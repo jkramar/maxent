@@ -1,5 +1,15 @@
 language: r
+
+# Using the package cache to store R package dependencies can significantly
+# speed up build times and is recommended for most builds.
+cache: packages
+
+# You will need to set sudo: false in order to use the container based builds
+# and package caching.
+sudo: false
+
 warnings_are_errors: false
+
 
 notifications:
   email:
