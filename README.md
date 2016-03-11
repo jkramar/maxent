@@ -2,7 +2,12 @@
 
 Low-memory Multinomial Logistic Regression with Support for Text Classification
 
-[![Build Status](https://travis-ci.org/vsimko/maxent.svg)](https://travis-ci.org/vsimko/maxent) [![codecov.io](https://codecov.io/github/vsimko/maxent/coverage.svg?branch=master)](https://codecov.io/github/vsimko/maxent?branch=master) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/maxent)](http://cran.r-project.org/package=maxent) ![CRAN Downloads](http://cranlogs-dev.r-pkg.org/badges/maxent)
+[![Build Status](https://travis-ci.org/vsimko/maxent.svg)](https://travis-ci.org/vsimko/maxent)
+[![codecov.io](https://codecov.io/github/vsimko/maxent/coverage.svg?branch=master)](https://codecov.io/github/vsimko/maxent?branch=master) 
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/maxent)](http://cran.r-project.org/package=maxent)
+![CRAN Downloads](http://cranlogs.r-pkg.org/badges/maxent)
+[![Issue Stats](http://issuestats.com/github/timjurka/maxent/badge/pr)](http://issuestats.com/github/timjurka/maxent)
+[![Issue Stats](http://issuestats.com/github/timjurka/maxent/badge/issue)](http://issuestats.com/github/timjurka/maxent)
 
 
 Maxent is an R package with tools for low-memory multinomial logistic regression,
