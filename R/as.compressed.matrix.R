@@ -33,10 +33,10 @@ as.compressed.matrix <- function(DocumentTermMatrix) {
     ia <- append(ia,el)
   }
 
-	# this will be returned
-	new("matrix.csr",
-      ra = as.numeric(DocumentTermMatrix$v),
-      ja = DocumentTermMatrix$j,
-      ia = as.integer(ia),
-      dimension = dim(DocumentTermMatrix))
+  # this will be returned
+  new("matrix.csr",
+    ra = as.numeric(DocumentTermMatrix$v),
+    ja = DocumentTermMatrix$j,
+    ia = as.integer(ia),
+    dimension = dim(DocumentTermMatrix))
 }
