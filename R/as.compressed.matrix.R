@@ -1,3 +1,4 @@
+#' @export
 as.compressed.matrix <- function(DocumentTermMatrix) {
   if (pmatch("matrix.csr",class(DocumentTermMatrix),nomatch = 0) > 0) {
     return(DocumentTermMatrix)
