@@ -21,7 +21,6 @@ Description: maxent is an R package with tools for low-memory multinomial
   entropy classifier is to minimize memory consumption on very large datasets,
   particularly sparse document-term matrices represented by the tm package.
 License: GPL-3
-LazyLoad: yes
 Packaged: 2011-12-21 21:57:05 UTC; timjurka
 Repository: CRAN
 Date/Publication: 2011-12-22 08:26:10
